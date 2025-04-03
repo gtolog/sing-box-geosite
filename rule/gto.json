@@ -1,0 +1,26 @@
+{
+  "rules": [
+    {
+      "domain_suffix": [
+        "adrise.tv",
+        "apkmirror.com",
+        "bandwagonhost.com",
+        "imgflip.com",
+        "jellyfin.org",
+        "leiting.io",
+        "licensekeyserver.com",
+        "openwrt.org",
+        "sagernet.org",
+        "strem.fun",
+        "strem.io",
+        "thexem.info",
+        "tubi.io",
+        "tubi.tv",
+        "tubi.video",
+        "tubitv.com",
+        "uscardforum.com"
+      ]
+    }
+  ],
+  "version": 2
+}
