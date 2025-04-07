@@ -5,11 +5,15 @@
         "adrise.tv",
         "apkmirror.com",
         "bandwagonhost.com",
+        "bt4g.com",
+        "bt4gprx.com",
         "imgflip.com",
         "jellyfin.org",
         "leiting.io",
         "licensekeyserver.com",
         "openwrt.org",
+        "rutracker.org",
+        "rutracker.ru",
         "sagernet.org",
         "strem.fun",
         "strem.io",
@@ -18,7 +22,13 @@
         "tubi.tv",
         "tubi.video",
         "tubitv.com",
-        "uscardforum.com"
+        "uscardforum.com",
+        "yts.mx"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "41.205.93.154/32"
       ]
     }
   ],
