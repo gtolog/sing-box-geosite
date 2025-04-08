@@ -1,0 +1,48 @@
+{
+  "rules": [
+    {
+      "domain_suffix": [
+        "adrise.tv",
+        "akamaized.net",
+        "amagi.tv",
+        "apkmirror.com",
+        "bandwagonhost.com",
+        "brew.sh",
+        "bt4g.com",
+        "bt4gprx.com",
+        "gvt1.com",
+        "imgflip.com",
+        "jellyfin.org",
+        "leiting.io",
+        "licensekeyserver.com",
+        "moveonjoy.com",
+        "openwrt.org",
+        "rutracker.org",
+        "rutracker.ru",
+        "sagernet.org",
+        "strem.fun",
+        "strem.io",
+        "thexem.info",
+        "tubi.io",
+        "tubi.tv",
+        "tubi.video",
+        "tubitv.com",
+        "uscardforum.com",
+        "vustreams.com",
+        "warnermediacdn.com",
+        "yts.mx"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "143.244.60.30/24",
+        "190.92.10.66/24",
+        "212.102.60.231/24",
+        "41.205.93.154/24",
+        "72.46.118.193/24",
+        "84.17.40.25/24"
+      ]
+    }
+  ],
+  "version": 2
+}
