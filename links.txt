@@ -19,3 +19,5 @@ https://core.telegram.org/resources/cidr.txt
 https://raw.githubusercontent.com/lord-alfred/ipranges/main/facebook/ipv4.txt
 https://raw.githubusercontent.com/lord-alfred/ipranges/main/facebook/ipv6.txt
 https://raw.githubusercontent.com/HybridNetworks/whatsapp-cidr/refs/heads/main/WhatsApp/whatsapp_cidr_ipv4.txt
+
+https://raw.githubusercontent.com/ppfeufer/adguard-filter-list/refs/heads/master/blocklist
