@@ -44,6 +44,22 @@ jobs:
     - name: Convert AdGuard DNS Filter to sing-box rule set
       run: |
         sing-box rule-set convert --type adguard --output ./rule/adservers.srs ./rule/adservers.txt
+    - name: Download content
+      run: |
+        URL="https://raw.githubusercontent.com/ppfeufer/adguard-filter-list/refs/heads/master/blocklist"
+        OUTPUT_FILE="./rule/blocklist.txt"
+
+        curl -L $URL -o $OUTPUT_FILE
+
+        if [ -f "$OUTPUT_FILE" ]; then
+          echo "Download successful: $OUTPUT_FILE"
+        else
+          echo "Download failed."
+          exit 1
+        fi
+    - name: Convert AdGuard DNS Filter to sing-box rule set
+      run: |
+        sing-box rule-set convert --type adguard --output ./rule/blocklist.srs ./rule/blocklist.txt
     - name: Run script
       run: python ../main.py
       working-directory: ./rule/
