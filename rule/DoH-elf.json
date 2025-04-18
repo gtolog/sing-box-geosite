@@ -1,0 +1,24 @@
+{
+  "rules": [
+    {
+      "domain": [
+        "dns.weixin.qq.com",
+        "dnspod.meituan.httpdns.qcloud.com",
+        "hcdnl.pull302.gslb.livehwc3.cn",
+        "httpdns.baidubce.com",
+        "httpdns.meituan.com",
+        "httpdnsmultiapivip.meituan.com",
+        "paydns.weixin.qq.com",
+        "resolvers-cn.httpdns.aliyuncs.com"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "103.37.155.60/32",
+        "202.90.108.13/32",
+        "202.90.110.46/32"
+      ]
+    }
+  ],
+  "version": 2
+}
