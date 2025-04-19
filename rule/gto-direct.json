@@ -1,13 +1,19 @@
 {
   "rules": [
     {
-      "domain_suffix": [
-        "canyouseeme.org",
-        "ipwhois.io",
-        "m-team.cc",
-        "m-team.io",
-        "test-ipv6.com"
-      ]
+      "mode": "or",
+      "rules": [
+        {
+          "domain_suffix": [
+            "canyouseeme.org",
+            "ipwhois.io",
+            "m-team.cc",
+            "m-team.io",
+            "test-ipv6.com"
+          ]
+        }
+      ],
+      "type": "logical"
     }
   ],
   "version": 2
