@@ -132,27 +132,27 @@ def parse_list_file(link, output_directory):
         df['pattern'] = df['pattern'].replace(MAP_DICT)  # 替换pattern为字典中的值
         os.makedirs(output_directory, exist_ok=True)  # 创建自定义文件夹
 
-        result_rules = {"version": 2, "rules": []}
+        result_rules = {"version": 2, "rules": [ { "type": "logical", "mode": "or", "rules": [] } ]}
         domain_entries = []
         for pattern, addresses in df.groupby('pattern')['address'].apply(list).to_dict().items():
             if pattern == 'domain_suffix':
                 rule_entry = {pattern: [address.strip() for address in addresses]}
-                result_rules["rules"].append(rule_entry)
+                result_rules["rules"][0]["rules"].append(rule_entry)
                 # domain_entries.extend([address.strip() for address in addresses])  # 1.9以下的版本需要额外处理 domain_suffix
             elif pattern == 'domain':
                 domain_entries.extend([address.strip() for address in addresses])
             else:
                 rule_entry = {pattern: [address.strip() for address in addresses]}
-                result_rules["rules"].append(rule_entry)
+                result_rules["rules"][0]["rules"].append(rule_entry)
         # 删除 'domain_entries' 中的重复值
         domain_entries = list(set(domain_entries))
         if domain_entries:
-            result_rules["rules"].insert(0, {'domain': domain_entries})
+            result_rules["rules"][0]["rules"].insert(0, {'domain': domain_entries})
 
         # 处理逻辑规则
         """
         if rules_list[0] != "[]":
-            result_rules["rules"].extend(rules_list[0])
+            result_rules["rules"][0]["rules"].extend(rules_list[0])
         """
 
         # 使用 output_directory 拼接完整路径
