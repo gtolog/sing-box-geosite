@@ -13,10 +13,6 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash
 https://adrules.top/adrules_domainset.txt
 https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/gfw.txt
 
-https://raw.githubusercontent.com/gtolog/rule-set/refs/heads/main/gto-proxy.list
-https://raw.githubusercontent.com/gtolog/rule-set/refs/heads/main/gto-direct.list
-https://raw.githubusercontent.com/gtolog/rule-set/refs/heads/main/DoH-public.list
-https://raw.githubusercontent.com/gtolog/rule-set/refs/heads/main/DoH-elf.list
 https://core.telegram.org/resources/cidr.txt
 https://raw.githubusercontent.com/lord-alfred/ipranges/main/facebook/ipv4.txt
 https://raw.githubusercontent.com/lord-alfred/ipranges/main/facebook/ipv6.txt
