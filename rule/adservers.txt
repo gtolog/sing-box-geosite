@@ -9,6 +9,8 @@
 !
 !
 !
+||demoaccount.site^
+||js.rev.iq^$third-party
 ||popular-tea.com^
 ||lanky-bar.com^
 ||montmena.top^
